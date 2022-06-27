@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.use(express.json()); // middleware to use req.body since its json format
+
 connectToMongo(); // connect to mongodb database
 
 // Available Routes
